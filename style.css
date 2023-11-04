@@ -1,0 +1,108 @@
+.inhalt {
+    font-family: Tahoma;
+    max-width: 400px;
+    margin: auto;
+  
+    padding: 25px;
+    box-shadow: 16px 16px teal;
+  
+    border-radius: 10px;
+    background-color: antiquewhite;
+  }
+  
+  h1 {
+    font-size: 42px;
+    margin-top: 0;
+  }
+  
+  .gruppe {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  
+  .logo {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .link {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+  
+    padding-left: 1em;
+    margin-bottom: 1em;
+    vertical-align: middle;
+  }
+  
+  ul.liste {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .tabelle {
+    margin: 0 auto;
+    width: 240px;
+    margin-bottom: 1em;
+    background-color: azure;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .tabelle tr:nth-child(odd) {
+    color: white;
+    background-color: teal;
+  }
+  
+  .tabelle td {
+    text-align: center;
+  }
+  
+  /* Ein schwieriger Teil */
+  ul.liste li:before {
+    content: "";
+    display: inline-block;
+  
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
+  
+    border-radius: 30%;
+    background-color: teal;
+    vertical-align: middle;
+  }
+  
+  .formular {
+    display: flex;
+    justify-content: space-between;
+  
+    gap: 10px;
+    width: 250px;
+    border-radius: 10px;
+    margin-left: auto;
+    padding: 10px;
+  
+    background-color: azure;
+  }
+  
+  .formular input {
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-right: 10px;
+    height: 1.8em;
+    min-width: 0px;
+    /* flex width fix */
+    font-size: 1.2em;
+    line-height: 1.2em;
+  }
+  
+  .formular button {
+    flex-shrink: 0;
+    appearance: none;
+    background-color: teal;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
