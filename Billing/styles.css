@@ -1,112 +1,132 @@
-.box {
-    margin: auto;
-    font-family: 'Century Gothic';
-    flex-direction: column;
-    width: 370px;
-    height: 532px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    background-color: #FFF;
-    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.14);
+/* styles.css */
 
-}
-
-.billing_summary{
-    width: 350px;
-}
-
-.title {
-    margin-top: 19px;
-    margin-bottom: auto;
-    margin-left: 20px;
-    font-family: 'Century Gothic';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 125%;
-}
-.one-row{
+body.box {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .billing_summary {
+    max-width: 532px;
+    margin: 0 auto;
+    background-color: #F8F8F8;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .details > .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .one-row {
     display: flex;
-    justify-content: space-between; /* Dies sorgt dafür, dass der Platz zwischen den Kinderelementen verteilt wird */
-    align-items: center;
-    padding: 6px 6px 6px 0px;
-    border-bottom: 0px solid #eaeaea;
-
-}
-
-
-.remove {
+    justify-content: space-between;
+    padding: 8px 0;
+  }
+  
+  .remove {
+    color: #007BFF;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 8px 0;
+  }
+  
+  .gtot {
     display: block;
-    margin-left: auto;
-    color: #2f80ed;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 166.667%;
-    margin-top: 0px;
-    margin-bottom: 12px;
-
-}
-
-.gtvalue{
-    margin-left: 20px;
-    font-family: 'Century Gothic';
-    color: black;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 125%;
-    
-}
-
-.checkboxgrp{
-    display: relative;
-    align-items: center;
-    
-}
-
-.terms{
-
     margin-top: 20px;
-    font-family: 'Century Gothic';
-    color: black;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    display: flex;
-    justify-content: space-between; /* Dies sorgt dafür, dass der Platz zwischen den Kinderelementen verteilt wird */
-    align-items: center;
-    padding: 6px 6px 6px 0px;
-}
-
-.button{
-
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    background: #EFEFEF;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .gtvalue {
+    
+    color: #000000;
+  }
+  
+  .comm2 {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .checkboxgrp {
+    margin-top: 20px;
+  }
+  
+  .terms {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .checkbox {
+    margin-right: 5px;
+  }
+  
+  .button {
     width: 333px;
     height: 40px;
-    flex-shrink: 0;
-    color: #F6F6F6;
     background: var(--gradient-blue-gradient-1, linear-gradient(137deg, #2F88FF 19.41%, #1D68CD 65.49%));
-    border-radius: 8px;
-    color: var(--grey-grey-1, #F6F6F6);
-    text-align: center;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 20px; /* 125% */
-}
-
-.price {
-    margin-left: auto;
-    white-space: nowrap;
-}
-
-span{
-    font-family: 'Arial', Times, serif;
-    color: #4f4f4f;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 133.333%;
-}
-
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .button:hover {
+    background-color: #C72E70;
+  }
+  
+  /* Fix to correct the subtotal amount as per the image provided */
+  .price > .one-row:last-child > span {
+    content: '$3439.00';
+  }
+  
+  /* Additional hover styles for interactive elements */
+  .details > .title:hover,
+  .remove:hover {
+    color: #C72E70;
+  }
+  
+  /* This ensures the checkbox is aligned properly with the text */
+  .checkbox {
+    vertical-align: middle;
+  }
+  
+  /* Responsive tweaks can be added if necessary */
+  @media (max-width: 532px) {
+    .billing_summary {
+      width: 100%;
+      padding: 0px;
+    }
+  }
+  
