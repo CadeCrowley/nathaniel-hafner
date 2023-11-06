@@ -1,11 +1,15 @@
 /* styles.css */
 
 body.box {
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    margin: 0;
-    padding: 20px;
-    color: #333;
+    margin: auto;
+    font-family: 'Century Gothic';
+    flex-direction: column;
+    width: 370px;
+    height: 532px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background-color: #FFF;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.14);
   }
   
   .billing_summary {
@@ -39,39 +43,49 @@ body.box {
   
   .remove {
     color: #007BFF;
+    font-family: 'Roboto';
+    font-size: 12px;
     text-decoration: underline;
     cursor: pointer;
-    padding: 8px 0;
-  }
-  
-  .gtot {
-    display: block;
-    margin-top: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    background: #EFEFEF;
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #ddd;
+    padding-bottom: 20px;
   }
   
   .gtvalue {
     
     color: #000000;
   }
+  .gtot {
+    display: flex;
+
+    width: auto;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    background: #EFEFEF;
+    padding: 20px;
+    text-align: left;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
   
+  .vertiline {
+    width: 100%;
+  }
   .comm2 {
-    display: block;
-    margin: 10px 0;
+    margin-top: 10px;
+    color: #858585;
   }
   
   textarea {
-    width: 100%;
-    padding: 10px;
+    min-width: 88%;
+    max-width:97%;
+    background-color: #F8F8F8;
+    padding: 20px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    margin-bottom: 10px;
+    color: #fff;
   }
   
   .checkboxgrp {
@@ -89,8 +103,7 @@ body.box {
   }
   
   .button {
-    width: 333px;
-    height: 40px;
+    width: 100%;
     background: var(--gradient-blue-gradient-1, linear-gradient(137deg, #2F88FF 19.41%, #1D68CD 65.49%));
     color: #fff;
     padding: 15px;
@@ -114,7 +127,7 @@ body.box {
   /* Additional hover styles for interactive elements */
   .details > .title:hover,
   .remove:hover {
-    color: #C72E70;
+    color: #c72ebd;
   }
   
   /* This ensures the checkbox is aligned properly with the text */
