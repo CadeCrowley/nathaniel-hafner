@@ -11,6 +11,10 @@
 
 }
 
+.billing_summary{
+    width: 350px;
+}
+
 .title {
     margin-top: 19px;
     margin-bottom: auto;
@@ -22,30 +26,87 @@
     line-height: 125%;
 }
 .one-row{
-    display: block;
-    
+    display: flex;
+    justify-content: space-between; /* Dies sorgt dafür, dass der Platz zwischen den Kinderelementen verteilt wird */
+    align-items: center;
+    padding: 6px 6px 6px 0px;
+    border-bottom: 0px solid #eaeaea;
 
 }
 
 
 .remove {
     display: block;
-    margin-left: 20px;
+    margin-left: auto;
     color: #2f80ed;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 166.667%;
+    margin-top: 0px;
     margin-bottom: 12px;
 
 }
+
+.gtvalue{
+    margin-left: 20px;
+    font-family: 'Century Gothic';
+    color: black;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    
+}
+
+.checkboxgrp{
+    display: relative;
+    align-items: center;
+    
+}
+
+.terms{
+
+    margin-top: 20px;
+    font-family: 'Century Gothic';
+    color: black;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    display: flex;
+    justify-content: space-between; /* Dies sorgt dafür, dass der Platz zwischen den Kinderelementen verteilt wird */
+    align-items: center;
+    padding: 6px 6px 6px 0px;
+}
+
+.button{
+
+    width: 333px;
+    height: 40px;
+    flex-shrink: 0;
+    color: #F6F6F6;
+    background: var(--gradient-blue-gradient-1, linear-gradient(137deg, #2F88FF 19.41%, #1D68CD 65.49%));
+    border-radius: 8px;
+    color: var(--grey-grey-1, #F6F6F6);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 125% */
+}
+
+.price {
+    margin-left: auto;
+    white-space: nowrap;
+}
+
 span{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: #4f4f4f;
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
     line-height: 133.333%;
-    margin-right: 20px;
-
 }
+
